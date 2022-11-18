@@ -1,16 +1,29 @@
 {
   "name": "saha.farm",
   "version": "1.0.0",
-  "description": "",
+  "description": "web site",
   "main": "index.js",
+  "watch": {
+    "build_all": {
+      "patterns": [
+        "src/html"
+      ],
+      "extensions": "html"
+    }
+  },
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./public/dist/main.css",
-    "watch": "tailwindcss -i ./src/input.css -o ./public/dist/main.css --watch"
+    "build": "npm-watch build_all",
+    "build_all": "html-includes --src src/html --dest public && tailwindcss -i ./src/styles/input.css -o ./public/styles/main.css",
+    "watch1": "tailwindcss -i ./src/styles/input.css -o ./public/styles/main.css --watch",
+    "compile": "html-includes --src src/html --dest public --watch",
+    "compile:min": "html-includes --src src/html --dest public --minify"
   },
   "keywords": [],
-  "author": "",
+  "author": "Georges SAHA",
   "license": "ISC",
   "devDependencies": {
+    "html-includes": "^5.0.0",
+    "npm-watch": "^0.11.0",
     "tailwindcss": "^3.2.1"
   }
 }
