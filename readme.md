@@ -1,6 +1,6 @@
-<h1 align="center"><a href="https://www.saha.farm">SAHA FARM</a></h1>
+<h1 align="center"><a href="https://www.saha.farm" target="_blank">SAHA FARM</a></h1>
 
-<p align="center">Site web de la ferme <a href="https://www.saha.farm">SAHA FARM</a></p>
+<p align="center">Site web de la ferme <a href="https://www.saha.farm" target="_blank">SAHA FARM</a></p>
 
 <hr/>
 
